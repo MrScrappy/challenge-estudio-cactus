@@ -23,7 +23,7 @@ const Point: React.FC<PointProps> = ({ coordinates, onClick, name }) => {
       title={name}
     >
       <Image
-        src={click} // Asegúrate de que esta ruta sea correcta
+        src={click} 
         width={40}
         height={50}
         alt="Click"

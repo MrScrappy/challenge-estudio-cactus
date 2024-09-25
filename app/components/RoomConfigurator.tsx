@@ -80,7 +80,6 @@ const RoomConfigurator = () => {
     if (selectedPoint && !(event.target as HTMLElement).closest('.material-list')) {
       setSelectedPoint(null);
       setPointsVisible(true);
-      ActiveLayer(false);
     }
   };
 
