@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, Fragment } from 'react';
+import { useEffect, useState } from 'react';
 import { db } from '../services/firebase';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import Point from './Point';
@@ -88,7 +88,7 @@ const RoomConfigurator = () => {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, [selectedPoint]);
+  }, [selectedPoint,handleClickOutside]);
 
   return (
     <div>

@@ -19,7 +19,7 @@ interface MaterialListProps {
   materials: Material[];
 }
 
-const MaterialList: React.FC<MaterialListProps> = ({ materials, onClose, selectLayer, ActiveLayer }) => {
+const MaterialList: React.FC<MaterialListProps> = ({ materials, selectLayer, ActiveLayer }) => {
   const [selectedMaterial, setSelectedMaterial] = useState<Material | null>(materials.length > 0 ? materials[0] : null);
 
   const handleMaterialClick = (material: Material) => {
